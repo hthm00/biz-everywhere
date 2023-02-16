@@ -3,7 +3,7 @@
 Backend instructions
 
 1. Install npm : [https://docs.npmjs.com/downloading-and-installing-node-js-and-npm]()
-2. cd to backend in your prefered terminal
+2. cd to the project in your terminal
 3. Type in terminal
 
    ```
