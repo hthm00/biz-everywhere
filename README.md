@@ -7,14 +7,9 @@ Backend instructions
 3. Type in terminal
 
    ```
-    npm init -y
+    npm i
    ```
-4. Install libraries
-
-   ```
-   npm install express
-   ```
-5. Run the server (By default will run in [http://localhost:3000]())
+4. Run the server (By default will run in [http://localhost:3000]())
 
    ```
    node index.js
