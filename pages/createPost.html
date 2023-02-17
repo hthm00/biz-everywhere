@@ -1,32 +1,41 @@
-<div class="form-group">
-    <label for="usr">Name:</label>
-    <input type="text" class="form-control" id="usr">
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create Listing</title>
+  </head>
+  <body>
+    <div class="form-group">
+      <label for="usr">Name:</label>
+      <input type="text" class="form-control" id="usr">
+    </div>
+    
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd">
+    </div>
+  
+    <div class="input-group">
+      <input type="file" class="form-control">
+      <button type="button" class="btn btn-secondary">Upload</button>
   </div>
   
-  <div class="form-group">
-    <label for="pwd">Password:</label>
-    <input type="password" class="form-control" id="pwd">
+  <h1 class="center form-title">Create Post</h1>
+   <ul class="form-errors">
+      <li>Business Name required</li>
+      <li>Body required</li>
+   </ul>
+  
+   <div class="container">
+      <div class="input-group flex-nowrap">
+          <span class="input-group-text" id="addon-wrapping">Enter your Company Name</span>
+          <input type="text" class="form-control" placeholder="Company Name" aria-label="Company Name" aria-describedby="addon-wrapping">
+      </div>
+  
+      <div class="input-group flex-nowrap">
+          <span class="input-group-text" id="addon-wrapping">Enter your DBA if different from Company Name</span>
+          <input type="text" class="form-control" placeholder="DBA" aria-label="DBA" aria-describedby="addon-wrapping">
+      </div>
   </div>
+  </body>
+</html>
 
-  <div class="input-group">
-    <input type="file" class="form-control">
-    <button type="button" class="btn btn-secondary">Upload</button>
-</div>
-
-<h1 class="center form-title">Create Post</h1>
- <ul class="form-errors">
-    <li>Business Name required</li>
-    <li>Body required</li>
- </ul>
-
- <div class="container">
-    <div class="input-group flex-nowrap">
-        <span class="input-group-text" id="addon-wrapping">Enter your Company Name</span>
-        <input type="text" class="form-control" placeholder="Company Name" aria-label="Company Name" aria-describedby="addon-wrapping">
-    </div>
-
-    <div class="input-group flex-nowrap">
-        <span class="input-group-text" id="addon-wrapping">Enter your DBA if different from Company Name</span>
-        <input type="text" class="form-control" placeholder="DBA" aria-label="DBA" aria-describedby="addon-wrapping">
-    </div>
-</div>
