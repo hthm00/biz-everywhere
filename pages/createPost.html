@@ -1,31 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Create Listing</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   </head>
 
   <body>
-    <div class="form-group">
-      <label for="usr">Name:</label>
-      <input type="text" class="form-control" id="usr">
-    </div>
-    
-    <div class="form-group">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="pwd">
-    </div>
-  
-    <div class="input-group">
-      <input type="file" class="form-control">
-      <button type="button" class="btn btn-secondary">Upload</button>
-  </div>
   
   <h1 class="center form-title">Add your Listing</h1>
-   <ul class="form-errors">
-      <li>Business Name required</li>
-      <li>Body required</li>
-   </ul>
   
    <div class="container">
       <div class="enterinfo">
@@ -67,6 +48,18 @@
         <span class="input-group-text" id="addon-wrapping">Enter Contact Phone</span>
         <input type="text" class="form-control" placeholder="Contact Phone" aria-label="Contact Phone" aria-describedby="addon-wrapping">
       </div>
+
+      <!--Upload Image-->
+      <div class="input-group">
+        <span class="input-group-text" id="addon-wrapping">Upload Your Business Photo</span>
+        <input type="file" class="form-control">
+        <button type="button" class="btn btn-secondary">Upload</button>
+      </div>
+
+      <!-- Save Draft & Publish Button-->
+      <button type="draft" class="btn btn-secondary">Save Draft</button>
+      <button type="submit" class="btn btn-primary">Publish</button>
+
     </div>
   </body>
 </html>
