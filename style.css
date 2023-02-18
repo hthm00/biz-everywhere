@@ -1,0 +1,12 @@
+.navbar-brand{
+    transform: translate(-50%);
+    left:50%;
+    position:absolute
+}
+
+
+li {
+    display:inline-block;
+    padding: 1.5px;
+}
+

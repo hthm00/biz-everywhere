@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Listing</title>
+</head>
+
+<body>
+    <!--Nav Bar-->
+    <nav class="navbar navbar-expand-lg bg-danger navbar-dark">
+        <div class="container ms-0">
+            <!--pagesToggler-->
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--otherPages -->
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#listing" class="nav-link">Listing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                </ul>
+            </div>
+            
+            
+            <a class="navbar-brand" href="#">Real Estate</a>
+        </div>
+    </nav>
+    <!--Search & filters-->
+    <nav class="navbar navbar-expand-lg bg-light navbar-dark">
+        <div class="container ms-0">
+            <ul class = "navbar nav">
+            <!--searchBox -->
+                <li >
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-danger" type="submit">Location</button>  
+                    </form>
+                </li>
+            <!--Filters-->
+                <li>
+                    <div class="btn-group">
+                        <button type="button" 
+                        class = "btn btn-danger dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        >For Sale</button>
+                        <ul class="dropdown-menu">
+                            <li><a class ="dropdown-item" href="#">For Sale</a></li>
+                            <li><a class ="dropdown-item" href="#">For Lease</a></li>
+                            <li><a class ="dropdown-item" href="#">Auctions</a></li>
+                        </ul>
+                    </div>
+                </li>
+            <!--Filters-->
+            <li>
+                <div class="btn-group">
+                    <button type="button" 
+                    class = "btn btn-danger dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Sort</button>
+                    <ul class="dropdown-menu">
+                        <li><a class ="dropdown-item" href="#">Price</a></li>
+                        <li><a class ="dropdown-item" href="#">Nearby</a></li>
+                    </ul>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+
+</html>
