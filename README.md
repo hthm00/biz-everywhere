@@ -14,3 +14,14 @@ Backend instructions
    ```
    node index.js
    ```
+
+Nodemon:
+
+1. Type in terminal
+   ```
+   npx nodemon [file] (npx nodemon index.js)
+   ```
+
+2. Accept prompts to install necessary packages
+
+3. Server will run at [http://localhost:3000]
