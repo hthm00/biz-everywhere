@@ -8,20 +8,14 @@ Backend instructions
 
    ```
     npm i
-   ```
-4. Run the server (By default will run in [http://localhost:3000]())
+   ``'
 
-   ```
-   node index.js
-   ```
+4. Type in terminal
 
-Nodemon:
-
-1. Type in terminal
    ```
    npx nodemon [file] (npx nodemon index.js)
    ```
 
-2. Accept prompts to install necessary packages
+5. Accept prompts to install necessary packages
 
-3. Server will run at [http://localhost:3000]
+6. Server will run at [http://localhost:3000]
