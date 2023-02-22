@@ -8,7 +8,7 @@ Backend instructions
 
    ```
     npm i
-   ``'
+   ```
 
 4. Type in terminal
 
