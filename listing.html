@@ -7,56 +7,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
     <title>Listing</title>
 </head>
 
 <body>
-    <!--Nav Bar-->
-    <nav class="navbar navbar-expand-lg bg-danger navbar-dark">
-        <div class="container ms-0">
-            <!--pagesToggler-->
-            <button 
-                class="navbar-toggler" 
-                type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!--otherPages -->
-            <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#listing" class="nav-link">Listing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                </ul>
+    <!--NavBar-->
+    <nav class="navbar bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+           <!--BrandName-->
+          <a class="navbar-brand fixed-top text-center" href="#">Real Estate</a>
+          <!--TogglerButton-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             
-            
-            <a class="navbar-brand" href="#">Real Estate</a>
+            <!--DrawerMenu-->
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#listing">Listing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
         </div>
     </nav>
+
+    <!--2nd NavBar-->
     <!--Search & filters-->
-    <nav class="navbar navbar-expand-lg bg-light navbar-dark">
-        <div class="container ms-0">
+    <nav class="navbar navbar-dark bg-light ">
+        <div class="container-fluid">
             <ul class = "navbar nav">
             <!--searchBox -->
                 <li >
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-danger" type="submit">Location</button>  
+                        <button class="btn btn-outline-dark" type="submit">Location</button>  
                     </form>
                 </li>
+
             <!--Filters-->
                 <li>
                     <div class="btn-group">
                         <button type="button" 
-                        class = "btn btn-danger dropdown-toggle"
+                        class = "btn btn-dark dropdown-toggle"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
                         >For Sale</button>
@@ -71,7 +79,7 @@
             <li>
                 <div class="btn-group">
                     <button type="button" 
-                    class = "btn btn-danger dropdown-toggle"
+                    class = "btn btn-dark dropdown-toggle"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                     >Sort</button>
@@ -84,8 +92,133 @@
             </ul>
         </div>
     </nav>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Map-->
+    <div class="container-fluid">
+        <div id="googleMap">
+          
+        </div>
+    </div>
+  
     
+    <!--Listings-->
+    <div class = "collection-list mt-4 row gx-0 gy-3">
+
+        <!--1st-->
+        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+            <div class = "collection-img position-relative">
+                <img src = "images/FirstHouse.jpg" class = "w-100">
+                <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">New</span>
+            </div>
+            <div class = "text-center">
+                <p class = "text-capitalize my-1">FirstHouse</p>
+                <span class = "fw-bold" style=color:red>$ 500,000</span>
+            </div>
+        </div>
+
+        <!--2nd-->
+        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+            <div class = "collection-img position-relative">
+                <img src = "images/SecondHouse.jpg" class = "w-100">
+                <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">New</span>
+            </div>
+            <div class = "text-center">
+                <p class = "text-capitalize my-1">SecondHouse</p>
+                <span class = "fw-bold" style=color:red>$ 400,000</span>
+            </div>
+        </div>
+
+        <!--3rd-->
+        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+            <div class = "collection-img position-relative">
+                <img src = "images/ThirdHouse.jpg" class = "w-100">
+                <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">On Sale</span>
+            </div>
+            <div class = "text-center">
+                <p class = "text-capitalize my-1">ThirdHouse</p>
+                <span class = "fw-bold" style=color:red>$ 450,000</span>
+            </div>
+        </div>
+
+        <!--4th-->
+        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+            <div class = "collection-img position-relative">
+                <img src = "images/FourthHouse.jpg" class = "w-100">
+                <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">On Sale</span>
+            </div>
+            <div class = "text-center">
+                <p class = "text-capitalize my-1" >FourthHouse</p>
+                <span class = "fw-bold" style=color:red>$ 1,000,000</span>
+            </div>
+        </div>
+
+
+        <!--5th-->
+        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+            <div class = "collection-img position-relative">
+                <img src = "images/FifthHouse.jpg" class = "w-100">
+                <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">On Sale</span>
+            </div>
+            <div class = "text-center">
+                <p class = "text-capitalize my-1">FifthHouse</p>
+                <span class = "fw-bold" style=color:red>$750,000 </span>
+            </div>
+        </div>
+
+        <!--6th-->
+        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+            <div class = "collection-img position-relative">
+                <img src = "images/SixthHouse.jpg" class = "w-100">
+                <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">On Sale</span>
+            </div>
+            <div class = "text-center">
+                <p class = "text-capitalize my-1">SixthHouse</p>
+                <span class = "fw-bold" style=color:red>$800,000 </span>
+            </div>
+        </div>
+
+        <!--7th-->
+        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+            <div class = "collection-img position-relative">
+                <img src = "images/SeventhHouse.jpg" class = "w-100">
+                <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">On Sale</span>
+            </div>
+            <div class = "text-center">
+                <p class = "text-capitalize my-1">SeventhHouse</p>
+                <span class = "fw-bold" style=color:red>$900,000 </span>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <nav class="bg-dark navbar mt-5 navbar-expand-md navbar-dark">
+            <div class="container-fluid">        
+                <a href="#" class="navbar-brand"></a>
+                <ul class="navbar-nav mt-auto">
+                    <li class="nav-item">
+                    <a href="#" class="nav-link">Help</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="#" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="#" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="#" class="nav-link">Terms of Use</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5AiQSg_qzK6Tcc381RnYIehBoubiaYaQ&callback=initMap">
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
