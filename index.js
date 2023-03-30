@@ -1,12 +1,12 @@
 const express = require('express');
 const app = express();
 
-app.engine('html', require('ejs').renderFile);
-app.set('view engine', 'html');
+app.set('view engine', 'ejs');
+app.set('views', './views/pages');
 
 app.get('/', (req, res) => {
     // res.send('Hello, World!');
-    res.render('index');
+    res.render('view');
   });
 
 app.listen(3000, () => {
