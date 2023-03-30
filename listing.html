@@ -8,46 +8,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    
     <title>Listing</title>
 </head>
 
 <body>
+  <a class="navbar-brand fixed-top text-center" href="#">Real Estate</a>
     <!--NavBar-->
-    <nav class="navbar bg-dark navbar-dark fixed-top">
-        <div class="container-fluid">
-           <!--BrandName-->
-          <a class="navbar-brand fixed-top text-center" href="#">Real Estate</a>
-          <!--TogglerButton-->
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            
-            <!--DrawerMenu-->
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#listing">Listing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-              </ul>
-            </div>
-
-          </div>
-        </div>
-    </nav>
-
-    <!--2nd NavBar-->
     <!--Search & filters-->
     <nav class="navbar navbar-dark bg-light ">
         <div class="container-fluid">
@@ -93,132 +59,84 @@
         </div>
     </nav>
 
-    <!--Map-->
-    <div class="container-fluid">
-        <div id="googleMap">
-          
+    <!--Listing-->
+    <div class="container">
+        <h2>Houses on SALE</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <a href="images/FirstHouse.jpg" target="_blank">
+                <img src="images/FirstHouse.jpg" alt="" style="width:100%">
+                <div class="caption">
+                  <p>NEW</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <a href="images/SecondHouse.jpg" target="_blank">
+                <img src="images/SecondHouse.jpg" alt="" style="width:100%">
+                <div class="caption">
+                  <p>NEW</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <a href="images/ThirdHouse.jpg" target="_blank">
+                <img src="images/ThirdHouse.jpg" alt="" style="width:100%">
+                <div class="caption">
+                  <p>NEW</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <a href="images/FourthHouse.jpg" target="_blank">
+                <img src="images/FourthHouse.jpg" alt="" style="width:100%">
+                <div class="caption">
+                  <p>NEW</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <a href="images/FifthHouse.jpg" target="_blank">
+                <img src="images/FifthHouse.jpg" alt="" style="width:100%">
+                <div class="caption">
+                  <p>NEW</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <a href="images/SeventhHouse.jpg" target="_blank">
+                <img src="images/SeventhHouse.jpg" alt="" style="width:100%">
+                <div class="caption">
+                  <p>NEW</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <a href="images/SixthHouse.jpg" target="_blank">
+                <img src="images/SixthHouse.jpg" alt="" style="width:100%">
+                <div class="caption">
+                  <p>NEW</p>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
-    </div>
-  
-    
-    <!--Listings-->
-    <div class = "collection-list mt-4 row gx-0 gy-3">
+      </div>
 
-        <!--1st-->
-        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
-            <div class = "collection-img position-relative">
-                <img src = "images/FirstHouse.jpg" class = "w-100">
-                <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">New</span>
-            </div>
-            <div class = "text-center">
-                <p class = "text-capitalize my-1">FirstHouse</p>
-                <span class = "fw-bold" style=color:red>$ 500,000</span>
-            </div>
-        </div>
-
-        <!--2nd-->
-        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
-            <div class = "collection-img position-relative">
-                <img src = "images/SecondHouse.jpg" class = "w-100">
-                <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">New</span>
-            </div>
-            <div class = "text-center">
-                <p class = "text-capitalize my-1">SecondHouse</p>
-                <span class = "fw-bold" style=color:red>$ 400,000</span>
-            </div>
-        </div>
-
-        <!--3rd-->
-        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
-            <div class = "collection-img position-relative">
-                <img src = "images/ThirdHouse.jpg" class = "w-100">
-                <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">On Sale</span>
-            </div>
-            <div class = "text-center">
-                <p class = "text-capitalize my-1">ThirdHouse</p>
-                <span class = "fw-bold" style=color:red>$ 450,000</span>
-            </div>
-        </div>
-
-        <!--4th-->
-        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
-            <div class = "collection-img position-relative">
-                <img src = "images/FourthHouse.jpg" class = "w-100">
-                <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">On Sale</span>
-            </div>
-            <div class = "text-center">
-                <p class = "text-capitalize my-1" >FourthHouse</p>
-                <span class = "fw-bold" style=color:red>$ 1,000,000</span>
-            </div>
-        </div>
-
-
-        <!--5th-->
-        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
-            <div class = "collection-img position-relative">
-                <img src = "images/FifthHouse.jpg" class = "w-100">
-                <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">On Sale</span>
-            </div>
-            <div class = "text-center">
-                <p class = "text-capitalize my-1">FifthHouse</p>
-                <span class = "fw-bold" style=color:red>$750,000 </span>
-            </div>
-        </div>
-
-        <!--6th-->
-        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
-            <div class = "collection-img position-relative">
-                <img src = "images/SixthHouse.jpg" class = "w-100">
-                <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">On Sale</span>
-            </div>
-            <div class = "text-center">
-                <p class = "text-capitalize my-1">SixthHouse</p>
-                <span class = "fw-bold" style=color:red>$800,000 </span>
-            </div>
-        </div>
-
-        <!--7th-->
-        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
-            <div class = "collection-img position-relative">
-                <img src = "images/SeventhHouse.jpg" class = "w-100">
-                <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">On Sale</span>
-            </div>
-            <div class = "text-center">
-                <p class = "text-capitalize my-1">SeventhHouse</p>
-                <span class = "fw-bold" style=color:red>$900,000 </span>
-            </div>
-        </div>
-
-        <!--Footer-->
-        <nav class="bg-dark navbar mt-5 navbar-expand-md navbar-dark">
-            <div class="container-fluid">        
-                <a href="#" class="navbar-brand"></a>
-                <ul class="navbar-nav mt-auto">
-                    <li class="nav-item">
-                    <a href="#" class="nav-link">Help</a>
-                    </li>
-                    <li class="nav-item">
-                    <a href="#" class="nav-link">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                    <a href="#" class="nav-link">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                    <a href="#" class="nav-link">Terms of Use</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-
-
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5AiQSg_qzK6Tcc381RnYIehBoubiaYaQ&callback=initMap">
-</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="app.js"></script>
 </body>
 
 </html>
