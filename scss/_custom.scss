@@ -1,5 +1,13 @@
+//custom colors for default themes goes in here
+$theme-colors: (
+  "primary": #E3B04B,
+  "secondary": #2B2B28,
+  "light": #FAF5F2,
+  "dark": #FFFFFF,
+  "muted": rgba(250, 245, 242, 0.2),
+  "secondarylight": #D9D9D9,
+  "champagne": #F7E7CE
+);
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-//here we can customize the bootstrap components
-
-//customize 
