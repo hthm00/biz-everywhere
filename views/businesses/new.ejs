@@ -1,1 +1,218 @@
-<h1>New</h1>
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<%- include('partials/header') %>
+  <!-- Custom CSS -->
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .container-fluid {
+      background-color: #faf5f2;
+      border: 1px solid #E3B04B;
+      border-radius: 10px;
+      margin-top: 20px;
+      padding: 20px;
+    }
+</style>
+</head>
+
+<body>
+
+    <h2 class="text form-title">Update Your Listing</h2>
+
+    <div class="container-fluid">
+      <h4 class="text form-title">Listing details</h4>
+
+      <div class="form-floating mb-3">
+        <input
+          type="title"
+          class="form-control"
+          id="title"
+          placeholder="The Title"
+        />
+        <label for="title">Title*</label>
+      </div>
+
+      <select class="form-select mb-3" aria-label="Categories">
+        <option selected>Categories*</option>
+        <option value="1">Business</option>
+        <option value="2">Commercial Property</option>
+        <option value="3">Commercial Lease</option>
+      </select>
+
+      <div class="form-floating mb-3">
+        <input
+          type="industry"
+          class="form-control"
+          id="industry"
+          placeholder="Tech"
+        />
+        <label for="industry">Industry</label>
+      </div>
+
+      <div class="form-floating">
+        <textarea
+          class="form-control mb-3"
+          placeholder="Add description"
+          id="description"
+          style="height: 100px"
+        ></textarea>
+        <label for="description">Description*</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input
+          type="established-year"
+          class="form-control"
+          id="established-year"
+          placeholder="2023"
+        />
+        <label for="established-year">Established Year</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input
+          type="reason-for-selling"
+          class="form-control"
+          id="reason-for-selling"
+          placeholder="I am just too tired"
+        />
+        <label for="reason-for-selling">Reason for selling</label>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <h6 class="text form-title">Pricing and financial</h6>
+
+      <div class="form-floating mb-3">
+        <input
+          type="title"
+          class="form-control"
+          id="title"
+          placeholder="The Title"
+        />
+        <label for="floatingInput">Title*</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input
+          type="asking-price"
+          class="form-control"
+          id="asking-price"
+          placeholder="1 million"
+        />
+        <label for="asking-price">$ Asking price</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input
+          type="gross-revenue"
+          class="form-control"
+          id="gross-revenue"
+          placeholder="1000"
+        />
+        <label for="gross-revenue">$ Gross revenue</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input
+          type="cash-flow"
+          class="form-control"
+          id="cash-flow"
+          placeholder="800"
+        />
+        <label for="cash-flow">$ Cash flow</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input
+          type="inventory"
+          class="form-control"
+          id="inventory"
+          placeholder="800"
+        />
+        <label for="inventory">$ Inventory</label>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <h6 class="text form-title">Location</h6>
+
+      <div class="form-floating mb-3">
+        <input
+          type="address"
+          class="form-control"
+          id="address"
+          placeholder="it's far"
+        />
+        <label for="address">Address*</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input
+          type="area"
+          class="form-control"
+          id="area"
+          placeholder="500 sqft"
+        />
+        <label for="area">Sqft</label>
+      </div>
+
+      <select class="form-select mb-3" aria-label="Real estate">
+        <option selected>Real estate*</option>
+        <option value="1">Own</option>
+        <option value="2">Lease</option>
+      </select>
+
+      <div class="form-floating mb-3">
+        <input
+          type="lease-expiration"
+          class="form-control"
+          id="lease-expiration"
+          placeholder="2028"
+        />
+        <label for="lease-expiration">Lease expiration</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input
+          type="lease-amount"
+          class="form-control"
+          id="lease-amount"
+          placeholder="$1000"
+        />
+        <label for="lease-amount">$ Lease/month</label>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <h6 class="text form-title">Marketing</h6>
+      <span
+        >Want to promote this Listing on Socal Media as part of your Biz
+        Everywhere Ads Campaign?</span
+      >
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="yes"
+          id="yes"
+          checked
+        />
+        <label class="form-check-label" for="yes">
+          Yes, advertise this listing
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="no" id="no" />
+        <label class="form-check-label" for="no"> Maybe later </label>
+      </div>
+    </div>
+
+</body>    
+</html>
