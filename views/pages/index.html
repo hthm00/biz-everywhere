@@ -2,24 +2,23 @@
     <!--Navbar-->
     <div class="container-fluid">
         <div class="row">
-            <header class="col-12 p-3 bg-dark text-white sticky-top pb-5" style="background-image: url('Meme1.jpg');">
+            <header class="col-12 p-3 bg-dark text-light sticky-top pb-5" style="background-image: url('photos/Top Background.jpg'); background-size: cover;">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-6 col-lg-2">
                             <!-- Business Logo -->
                             <div class="BusinessLogo">
                                 <h1 class="events text-center">
-                                    <img src="BizEverywhereSign.jpg" class="img-fluid" alt="Business Logo" width="50%">
+                                    <img src="photos\BizEverywhereSign.jpg" class="img-fluid" alt="Business Logo" width="50%">
                                 </h1>
                             </div>
                         </div>
                         <div class="col-6 col-lg-10 text-end">
                             <ul class="nav justify-content-end">
-                                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" class="nav-link px-2 text-secondary">Home</a></li>
-                                <li><a href="https://www.instagram.com/tonybanhh/" class="nav-link px-2 text-white">Tony's Instagram</a></li>
-                                <li><a href="https://www.linkedin.com/in/tony-banh-46631080/" class="nav-link px-2 text-white">Tony's Linkedin</a></li>
-                                <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-                                <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" class="nav-link px-2 text-primary">Home</a></li>
+                                <li><a href="#" class="nav-link px-2 text-secondary">Buy</a></li>
+                                <li><a href="#" class="nav-link px-2 text-secondary">Sell</a></li>
+                                <li><a href="#" class="nav-link px-2 text-secondary">About Us</a></li>
                             </ul>
                         </div>
                     </div>           
@@ -58,18 +57,24 @@
 
       
 
+    <!-- <head>
+        <%- include('../partials/head'); %>
+    </head> -->
     <!-- Head -->
     <head>
         <!-- Bootstrap CSS -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
             integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    </head>
 
+    <!-- Body -->
+    <body class="d-flex flex-column min-vh-100">
         <div class="p-4 container">
             <div class="row">
                 <div class="col-6">
                     <div class="d-flex align-items-center">
-                        <h3 class="text-decoration-none text-black">Recommended For You</h3>
+                        <h3 class="text-decoration-none text-secondary">Recommended For You</h3>
                     </div>
                     <p>Stay informed of new listings.</p>
                 </div>
@@ -94,46 +99,41 @@
                 </div>
             </div>
         </div>
-    </head>
-
-    <!-- Body -->
-    <body class="d-flex flex-column min-vh-100">
         <div class="container flex-grow-1">
             <!-- Columns in the body -->
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4">
-                        <div class="card text-bg-dark">
+                        <div class="card text-bg-light">
+                            <img src="photos\Y's Boba Shop.jpg" class="img-fluid" alt="Example image">
                             <div class="card-body">
-                                <a href="#">
-                                    <img src="Y's Boba Shop.jpg" alt="Example image">
-                                    <div class="row align-items-center text-left">
-                                        <div class="col-12 col-lg-6">
-                                            <div class="d-flex align-items-center">
-                                                <h3 class="text-decoration-none text-white">Y's Boba Shop</h3>
-                                                <button class="btn btn-outline-danger ml-auto"><i class="bi bi-heart"></i></button>
-                                            </div>
-                                            <a class="text-decoration-none text-white">1234 This St, This City, TS 01010</a>
-                                            <br><a class="text-decoration-none text-warning">$732,000</a>
-                                        </div>                                              
-                                    </div>                                                                                  
-                                </a>                                   
+                                <a href="#" class="stretched-link"></a>
+                                <div class="row align-items-center text-left">
+                                    <div class="col-12">
+                                        <div class="d-flex align-items-center">
+                                            <h3 class="text-decoration-none text-secondary">Y's Boba Shop</h3>
+                                            <button class="btn btn-outline-primary ml-auto"><i class="bi bi-heart"></i></button>
+                                        </div>
+                                        <a class="text-decoration-none text-secondary">1234 This St, This City, TS 01010</a>
+                                        <br><a class="text-decoration-none text-primary">$732,000</a>
+                                    </div>                                              
+                                </div>                              
                             </div>
                         </div>
                     </div>                        
                     <div class="col-sm-4">
-                        <div class="card text-bg-dark">
+                        <div class="card text-bg-light">
+                            <img src="photos\Y's Building.jpg" class="img-fluid" alt="Example image">
                             <div class="card-body">
-                                <a href="#">
-                                    <img src="Y's Building.jpg" alt="Example image">
+                                <a href="#" class="stretched-link"></a>
                                     <div class="row align-items-center text-left">
-                                        <div class="col-12 col-lg-6">
+                                        <div class="col-12">
                                             <div class="d-flex align-items-center">
-                                                <h3 class="text-decoration-none text-white">Y's Commercial Building</h3>
+                                                <h3 class="text-decoration-none text-secondary">Y's Commercial Building</h3>
                                                 <button class="btn btn-outline-danger ml-auto"><i class="bi bi-heart"></i></button>
                                             </div>
-                                            <a class="text-decoration-none text-white">4321 This St, This City, TS 10101</a>
-                                            <br><a class="text-decoration-none text-warning">$1,370,000</a>
+                                            <a class="text-decoration-none text-secondary">4321 This St, This City, TS 10101</a>
+                                            <br><a class="text-decoration-none text-primary">$1,370,000</a>
                                         </div>                                              
                                     </div>                                                                                  
                                 </a>  
@@ -141,18 +141,18 @@
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="card text-bg-dark">
+                        <div class="card text-bg-light">
+                            <img src="photos\Y's Rental Office Space.jpg" class="img-fluid" alt="Example image">
                             <div class="card-body">
-                                <a href="#">
-                                    <img src="Y's Rental Office Space.jpg" alt="Example image">
+                                <a href="#" class="stretched-link"></a>
                                     <div class="row align-items-center text-left">
-                                        <div class="col-12 col-lg-6">
+                                        <div class="col-12">
                                             <div class="d-flex align-items-center">
-                                                <h3 class="text-decoration-none text-white">Y's Rental Office Space</h3>
+                                                <h3 class="text-decoration-none text-secondary">Y's Rental Office Space</h3>
                                                 <button class="btn btn-outline-danger ml-auto"><i class="bi bi-heart"></i></button>
                                             </div>
-                                            <a class="text-decoration-none text-white">1324 This St, This City, TS 00100</a>
-                                            <br><a class="text-decoration-none text-warning">$80,085</a>
+                                            <a class="text-decoration-none text-secondary">1324 This St, This City, TS 00100</a>
+                                            <br><a class="text-decoration-none text-primary">$80,085</a>
                                         </div>                                              
                                     </div>                                                                                  
                                 </a>  
@@ -168,49 +168,9 @@
     <!-- Keeps the nav bar at the bottom -->
     <div class="row flex-grow-1"></div>
 
-    <!-- NavBar in the footer-->
-    <footer class="bg-dark footer mt-5 footer-expand-md footer-dark">
-        <div class="container py-3">
-            <div class="row">
-                <div class="col-md-4 text-white">
-                    <h5 class="text-warning">BizEverywhere</h5>
-                </div>
-                <div class="col-md-2 text-white">
-                    <h5 class="text-warning">Column 1</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-decoration-none text-white">Chicken</a></li>
-                        <li><a href="#" class="text-decoration-none text-white">Chicken</a></li>
-                        <li><a href="#" class="text-decoration-none text-white">Chicken</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <h5 class="text-warning">Column 2</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-decoration-none text-white">Chicken</a></li>
-                        <li><a href="#" class="text-decoration-none text-white">Chicken</a></li>
-                        <li><a href="#" class="text-decoration-none text-white">Chicken</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <h5 class="text-warning">Column 3</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-decoration-none text-white">Chicken</a></li>
-                        <li><a href="#" class="text-decoration-none text-white">Chicken</a></li>
-                        <li><a href="#" class="text-decoration-none text-white">Chicken</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <h5 class="text-warning">Column 4</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-decoration-none text-white">Chicken</a></li>
-                        <li><a href="#" class="text-decoration-none text-white">Chicken</a></li>
-                        <li><a href="#" class="text-decoration-none text-white">Chicken</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>              
+    <footer>
+        <%- include('../partials/footer'); %>
     </footer>
-
         
         
     <!-- JS Scripts for Bootstrap-->
