@@ -1,6 +1,46 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+//Creates the Business Schema
+const BusinessSchema = new Schema({
+  name: {
+    type: String,
+    required: true
+  },
+  description: {
+    type: String,
+    required: true
+  },
+  owner: {
+    type: Schema.Types.ObjectId,
+    ref: 'User',
+    required: true
+  },
+  employees: [{
+    type: Schema.Types.ObjectId,
+    ref: 'User'
+  }],
+  address: {
+    street: String,
+    city: String,
+    state: String,
+    zip: String
+  },
+  revenue: {
+    type: Number,
+    default: 0
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now
+  },
+  updatedAt: {
+    type: Date,
+    default: Date.now
+  }
+});
+
+
 //Creates the User Schema
 const UserSchema = new Schema({
   name: String,
@@ -64,11 +104,9 @@ const CommentSchema = new Schema({
 
 //Connects to the database
 mongoose
-  .connect("mongodb://localhost:27017/dbmodel", {
+  .connect("mongodb://localhost:27017/local", {
     useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-    useCreateIndex: true,
+    useUnifiedTopology: true
   })
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.log("Error connecting to MongoDB", err));
@@ -79,6 +117,6 @@ const User = mongoose.model("Author", UserSchema);
 const Post = mongoose.model("Post", PostSchema);
 const Picture = mongoose.model("Picture", PictureSchema);
 const Comment = mongoose.model("Comment", CommentSchema);
+const Business = mongoose.model('Business', BusinessSchema);
 
-module.exports = { User, Post, Picture, Comment };
-
+module.exports = { Business, User, Post, Picture, Comment };
