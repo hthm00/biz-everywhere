@@ -59,5 +59,10 @@ app.get("/", function (req, res) {
 });
 
 app.listen(3000, () => {
-	console.log("Server listening on port 3000");
+
+    console.log('Server listening on port 3000');
 });
+
+//Calls the dbmodel.js file
+const db = require('./models/business.js');
+
