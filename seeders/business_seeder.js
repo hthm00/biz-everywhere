@@ -1,5 +1,10 @@
 const mongoose = require('mongoose');
-const { Business, Post, User, Picture, Comment } = require('../models/business.js');
+
+const Business = require('../models/business');
+const User = require('../models/user');
+const Picture = require('../models/picture');
+const Comment = require('../models/comment');
+
 
 
 mongoose.connect('mongodb://localhost:27017/local', {
@@ -20,7 +25,6 @@ db.once('open', function () {
     name: 'Acme Inc.',
     description: 'A company that makes everything.',
     owner: '61507a480b8c9265e5dd85de',
-    employees: ['61507a480b8c9265e5dd85df', '61507a480b8c9265e5dd85e0'],
     address: {
       street: '123 Main St',
       city: 'Anytown',
@@ -33,7 +37,6 @@ db.once('open', function () {
     name: 'Widget Co.',
     description: 'A company that makes widgets.',
     owner: '61507a480b8c9265e5dd85e1',
-    employees: ['61507a480b8c9265e5dd85e2', '61507a480b8c9265e5dd85e3', '61507a480b8c9265e5dd85e4'],
     address: {
       street: '456 Broadway',
       city: 'Anycity',
