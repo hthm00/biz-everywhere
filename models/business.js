@@ -45,8 +45,7 @@ const businessSchema = new Schema({
     street: String,
     city: String,
     state: String,
-    zip: String,
-    required: true
+    zip: String
   },
   sqrf: {
     type: Number,
@@ -65,7 +64,7 @@ const businessSchema = new Schema({
   },
   marketingAD: {
     type: Boolean,
-    default: True
+    default: true
   },
   listingcreationstatus: {
     type: String,
@@ -79,8 +78,7 @@ const businessSchema = new Schema({
   },
   owner: {
     type: Schema.Types.ObjectId,
-    ref: 'User',
-    required: true
+    ref: 'User'
   },
   createdAt: {
     type: Date,

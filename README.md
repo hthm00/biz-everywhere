@@ -16,7 +16,7 @@ Backend instructions
    ```
 5. Accept prompts to install necessary packages
 6. Server will run at [http://localhost:3000]
-7. To seed sample data to the server, navigate to seeders using your terminal and run
+7. To seed sample data to the server:
    ```
-   node business_seeder.js
+   node seeders/business_seeder.js
    ```
