@@ -1,1 +1,231 @@
-<h1>Edit</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+  </head>
+
+  <body>
+    <%- include('../partials/header'); %>
+
+    <h5 class="text form-title">Update Your Listing</h5>
+
+    <form action="POST">
+      <div class="container-fluid">
+        <h6 class="text form-title">Listing details</h6>
+
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            name="title"
+            value="<%= business.title %>"
+          />
+          <label for="title">Title*</label>
+        </div>
+
+        <select
+          class="form-select mb-3"
+          aria-label="Categories"
+          name="categories"
+        >
+          <option selected>Categories*</option>
+          <option value="1">Business</option>
+          <option value="2">Commercial Property</option>
+          <option value="3">Commercial Lease</option>
+        </select>
+
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="industry"
+            name="industry"
+            value="<%= business.industry %>"
+          />
+          <label for="industry">Industry</label>
+        </div>
+
+        <div class="form-floating">
+          <textarea
+            class="form-control mb-3"
+            placeholder="Add description"
+            id="description"
+            name="description"
+            style="height: 100px"
+            value="<%= business.description %>"
+          ></textarea>
+          <label for="description">Description*</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="established-year"
+            name="established-year"
+            value="<%= business.establishedyear %>"
+          />
+          <label for="established-year">Established Year</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="selling-reason"
+            name="selling-reason"
+            value="<%= business.sellingreason %>"
+          />
+          <label for="selling-reason">Reason for selling</label>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <h6 class="text form-title">Pricing and financial</h6>
+
+        <div class="form-floating mb-3">
+          <input
+            type="number"
+            class="form-control"
+            id="asking-price"
+            name="asking-price"
+            value="<%= business.askingprice %>"
+          />
+          <label for="asking-price">$ Asking price</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input
+            type="number"
+            class="form-control"
+            id="gross-revenue"
+            name="gross-revenue"
+            value="<%= business.grossrevenue %>"
+          />
+          <label for="gross-revenue">$ Gross revenue</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input
+            type="number"
+            class="form-control"
+            id="cash-flow"
+            name="cash-flow"
+            value="<%= business.cashflow %>"
+          />
+          <label for="cash-flow">$ Cash flow</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input
+            type="number"
+            class="form-control"
+            id="inventory"
+            name="inventory"
+            value="<%= business.inventory %>"
+          />
+          <label for="inventory">$ Inventory</label>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <h6 class="text form-title">Location</h6>
+
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="address"
+            name="address"
+            value="<%= business.address %>"
+          />
+          <label for="address">Address*</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input
+            type="number"
+            class="form-control"
+            id="area"
+            name="area"
+            value="<%= business.sqrf %>"
+          />
+          <label for="area">Sqft</label>
+        </div>
+
+        <select
+          class="form-select mb-3"
+          aria-label="Real estate"
+          name="real-estate"
+        >
+          <option selected>Real estate*</option>
+          <option value="1">Own</option>
+          <option value="2">Lease</option>
+          value="<%= business.realestate %>"
+        </select>
+
+        <div class="form-floating mb-3">
+          <input
+            type="date"
+            class="form-control"
+            id="lease-expiration"
+            name="lease-expiration"
+            value="<%= business.leaseexp %>"
+          />
+          <label for="lease-expiration">Lease expiration</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input
+            type="number"
+            class="form-control"
+            id="lease-amount"
+            name="lease-amount"
+            value="<%= business.leasepermonth %>"
+          />
+          <label for="lease-amount">$ Lease/month</label>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <h6 class="text form-title">Marketing</h6>
+        <span
+          >Want to promote this Listing on Socal Media as part of your Biz
+          Everywhere Ads Campaign?</span
+        >
+
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="advertise"
+            id="yes"
+            name="yes-radio"
+          />
+          <label class="form-check-label" for="yes"
+            >Yes, advertise this listing</label
+          >
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="advertise"
+            id="no"
+            name="no-radio"
+            value="<%= business.marketingAD %>"
+          />
+          <label class="form-check-label" for="no">Maybe later</label>
+        </div>
+      </div>
+
+      <input class="btn btn-outline-primary" type="button" value="Cancel" />
+      <input class="btn btn-outline-primary" type="button" value="Preview" />
+      <input class="btn btn-outline-primary" type="button" value="Save Draft" />
+      <input class="btn btn-primary" type="submit" value="Publish" />
+    </form>
+
+    <%- include('../partials/footer'); %>
+  </body>
+</html>

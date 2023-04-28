@@ -8,10 +8,21 @@ app.set("view engine", "ejs");
 const businesses = [
 	{
 		title: "My Boba Shop",
-		price: 190000,
+		askingprice: 190000,
 		image:
 			"https://vivitea.nl/wp-content/uploads/2021/08/vivi-bubble-tea-zoetermeer-drinks-19-2.jpg",
 		address: "123 This St, Long Beach, CA 92000",
+		category: "Cafe/Tea",
+		industry: "Food Services",
+		description: "Y likes boba so she opened this shop",
+		establishedyear: "2018",
+		sellingreason: "Y did not like to talk to customers...AT ALL...",
+		grossrevenue: "300000",
+		cashflow: "50000",
+		inventory: "500",
+		sqrf: "1200",
+		realestate: "Lease",
+		leasepermonth: "1500",
 	},
 	{
 		title: "My Gift Shop",
