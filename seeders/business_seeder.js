@@ -2,8 +2,6 @@ const mongoose = require('mongoose');
 
 const Business = require('../models/business');
 //const User = require('../models/user');
-//const Picture = require('../models/picture');
-//const Comment = require('../models/comment');
 
 
 

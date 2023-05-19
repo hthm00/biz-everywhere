@@ -1,4 +1,6 @@
 const mongoose = require("mongoose");
+
+
 const Schema = mongoose.Schema;
 
 //Creates the Business Schema
@@ -90,14 +92,21 @@ const businessSchema = new Schema({
   },
   pictures: [
     {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Picture",
+      url: String,
+      caption: String,
+      createdAt: {
+          type: Date,
+          default: Date.now
+        },
     },
   ],
   comments: [
     {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Comment",
+      user: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
+      },
+      body: String,
     },
   ],
 

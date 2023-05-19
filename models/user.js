@@ -36,7 +36,7 @@ const userSchema = new Schema({
         type: String
     },
     profilepic: {
-        type: String,
+        url: String,
         default: "profile_image_url" // TODO - add default image
     },
     listbusiness: [
